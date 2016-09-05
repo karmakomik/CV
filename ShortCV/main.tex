@@ -1,0 +1,127 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Unnikrishnan}
+\familyname{R}
+\title{Research Associate}                               % optional, remove / comment the line if not wanted
+\address{SRL C-35/1}{Trivandrum 695010}{Kerala}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\mobile{+91~9895252902}                          % optional, remove / comment the line if not wanted
+\phone{+91~(471)~3917895}                           % optional, remove / comment the line if not wanted
+\email{unnikrishnan.r@ammachilabs.org}                                   % optional, remove / comment the line if not wanted
+%\photo[64pt][0.1pt]{unni}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Experience}
+%\subsection{}
+\cventry{2015}{Visiting Researcher}{CHILI Labs}{École Polytechnique Fédérale de Lausanne}{}{Developed augmented reality game to teach efficient packing strategies in planning woodcuts.}
+\cventry{2010--}{Research Associate}{AMMACHI Labs}{Amrita Vishwa Vidyapeetham}{}{
+Projects:%
+\begin{itemize}%
+\item \textbf{Computational thinking \textit{[2015]}} 
+  \begin{itemize}%
+  \item Developed a board game to teach computational concepts and an associated computer game for introducing programming to children from rural India.
+  \end{itemize}
+\item \textbf{Village development \textit{[2015]}} 
+  \begin{itemize}%
+  \item Conducted digital literacy classes and sanitation awareness campaigns, assisted women in constructing toilets, documented local music and medical knowhow in the villages of Nani Borwai (Gujarat), Pandori (Jammu) and Indpur (Himachal).
+  \end{itemize}
+\item \textbf{Rebar bending trainer \textit{[2014]}} 
+  \begin{itemize}%
+  \item Developed real time mesh deformation graphics, virtual learning environment and user interface (ongoing).
+  \end{itemize}
+\item \textbf{Balance training system \textit{[2013]}} 
+  \begin{itemize}%
+  \item Developed software for the Amrita Balance training system (AMBA) and designed serious games to help patients with balance impairments regain balance.
+  \end{itemize}  
+\item \textbf{Virtual motorcycle assembly trainer \textit{[2013]}} 
+  \begin{itemize}%
+  \item Gesture interaction using the Leap motion sensor \& zSpace virtual holographic display for interactive labeling and assembly operations. 
+  \end{itemize}
+\item \textbf{Interactive Art Installation \textit{[2013-]}}
+  \begin{itemize}%
+  \item Developed computer vision based software to identify user interaction with a water fountain and dynamically rendered music based on the interaction patterns.
+  \end{itemize}  
+\item \textbf{Jigsaw simulator with passive haptic feedback  \textit{[2012]}}
+  \begin{itemize}%
+  \item Developed computer vision based prototype passive haptic feedback system 'MUSHAK' for simulating a Jigsaw tool.
+  \end{itemize}
+\item \textbf{Visuo-haptic simulators for APTAH and CHAKRA haptic devices \textit{[2010-2014]}}
+  \begin{itemize}%
+  \item Developed haptic feedback enabled training simulation software for drillpress and tablesaw machines and file, hand plane \& ratchet tools.
+  \end{itemize}  
+\end{itemize}}
+\cventry{2009--2010}{Student Intern}{AMMACHI Labs}{Amrita Vishwa Vidyapeetham}{}{Made a prototype for a haptic wood carving simulator using the Falcon haptic device and the Chai3D library. I also developed a constructive solid geometry based drilling simulator.}
+
+\section{Education}
+\cventry{2007--2010}{Master in Computer Applications}{Amrita School of Engineering}{Amritapuri}{\textit{CGPA: 8.0 out of 10.0 }}{}  % arguments 3 to 6 can be left empty
+\cventry{2004--2007}{BSc in Computer Science}{Amrita School of Arts and Sciences}{Amritapuri}{\textit{CGPA: 8.78 out of 10.0 }}{}  % arguments 3 to 6 can be left empty
+
+\section{Technical skills}
+\cvdoubleitem{Programming}{C, C++, C\#, Java.}{Haptics}{Chai3D, H3DAPI.}
+\cvdoubleitem{IDEs}{Visual Studio, Eclipse, Netbeans.}{Electronics}{Arduino.}
+\cvdoubleitem{Graphics}{Unity3D, OpenGL, IRRLicht, Processing.}{Web}{Javascript, PHP.}
+\cvdoubleitem{Sound Generation}{Puredata.} {Motion Tracking}{Kinect SDK, Leap SDK, 3Gear SDK.}
+
+\section{Volunteering}
+\cvitem{2011--}{Volunteered for various Amala Bharatham (Clean India) Campaign clean up drives in Sabarimala, Kerala.}
+\cvitem{2004--}{Volunteered for Mata Amritanandamayi Devi's birthday celebrations for many years serving in crowd control, food serving etc.}
+\cvitem{2004--}{Volunteered to help in the execution of various international conferences held at Amritapuri.}
+\cvitem{2004--2010}{Volunteered to help in the organizing and execution of various techfests and college festivals.}
+
+% Publications from a BibTeX file using the multibib package
+\section{Publications}
+\cvlistitem {B Bhavani, Srividya Sheshadri, R Unnikrishnan, "Vocational education technology: Rural India", Proceedings of the 1st Amrita ACM-W Celebration on Women in Computing in India, September 2010}
+\cvlistitem {R. Unnikrishnan, K. Moawad, Rao R. Bhavani, "A Physiotherapy toolkit using motion tracking and haptic devices", IEEE Global Humanitarian Conference 2013, India, 2013.}
+\cvlistitem {N. Akshay, S. Deepu, E. S. Rahul, R. Ranjith, J. Jose, R. Unnikrishnan, Rao R. Bhavani, "Design and Evaluation of a Haptic Simulator for Vocational Skill Training and Assessment", 39th Annual Conference of the IEEE Industrial Electronics Society, Vienna, 2013.}
+\cvlistitem {Ranjith, R., Nagarajan Akshay, R. Unnikrishnan, and Rao R. Bhavani. "Do It Yourself Educational Kits for Vocational Education and Training." In Proceedings of the 2014 International Conference on Interdisciplinary Advances in Applied Computing, p. 40. ACM, 2014}
+\cvlistitem {Jose, James, R. Unnikrishnan, Delmar Marshall, and Rao R. Bhavani. "Haptic simulations for training plumbing skills." In Haptic, Audio and Visual Environments and Games (HAVE), 2014 IEEE International Symposium on, pp. 65-70. IEEE, 2014.}
+\cvlistitem {R. Unnikrishnan, N. Amrita, Alexander Muir, and Bhavani Rao. "Of Elephants and Nested Loops: How to Introduce Computing to Youth in Rural India." In Proceedings of the The 15th International Conference on Interaction Design and Children, pp. 137-146. ACM, 2016.}
+\clearpage
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
